@@ -1,10 +1,18 @@
+@font-face {
+    font-family: Annabelle;
+    src: url(fonts/Annabelle\ JF\ Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-size: 16px;
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
 }
 
 .root-container {
@@ -12,3 +20,166 @@ body {
     max-width: 1460px;
 }
 
+.ic-location {
+    display: inline-block;
+    background-image: url(icons/location.png);
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 27px;
+    vertical-align: middle;
+}
+
+.ic-call {
+    display: inline-block;
+    background-image: url(icons/call.png);
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 27px;
+    vertical-align: middle;
+}
+
+.ic-clock {
+    display: inline-block;
+    background-image: url(icons/clock.png);
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 27px;
+    vertical-align: middle;
+}
+
+.ic-trends {
+    width: 24px;
+    height: 19px;
+    background-image: url(icons/trends.png);
+    background-repeat: no-repeat;
+}
+
+.ic-favs {
+    width: 24px;
+    height: 19px;
+    background-image: url(icons/favorites.png);
+    background-repeat: no-repeat;
+}
+
+.row-cv {
+    display: flex;
+    align-items: center;
+}
+
+.g8 {
+    gap: 8px;
+}
+
+.g16 {
+    gap: 16px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+}
+
+.logo {
+    position: relative;
+    font-family: Annabelle, sans-serif;
+    font-size: 55px;
+    font-style: italic;
+}
+
+.logo__circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ffe954;
+    border-radius: 50%;
+    z-index: -1;
+    top: 12px;
+    left: 36px;
+}
+
+
+
+.header-items {
+    display: flex;
+    column-gap: 48px;
+    align-items: center;
+}
+
+
+
+.header-item {
+    color: #3f3f3e;
+}
+
+.header-item__text {
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+}
+
+.header-item:hover .header-item__text {
+    border-color: inherit;
+}
+
+
+
+.search-input {
+    position: relative;
+}
+
+.search-input input[type="text"] {
+    box-sizing: border-box;
+    border: 1px solid #3f3f3e;
+    height: 32px;
+    border-radius: 16px;
+    padding-left: 36px;
+    padding-right: 16px;
+    font-size: 16px;
+}
+
+.search-input__icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    top: 6px;
+    background-image: url(icons/search.png);
+    background-repeat: no-repeat;
+}
+
+
+.basket-info {
+    color: white;
+    background-color: black;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 100px;
+    font-size: 14px;
+    padding: 0 12px;
+}
+
+.basket-info__icon {
+    position: relative;
+    background-image: url(icons/basket.png);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 20px;
+}
+
+.basket-info__count {
+    position: absolute;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-52%, -27%);
+}
