@@ -15,11 +15,6 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
-.root-container {
-    margin: 0 auto;
-    max-width: 1460px;
-}
-
 .ic-location {
     display: inline-block;
     background-image: url(icons/location.png);
@@ -74,10 +69,22 @@ body {
     gap: 16px;
 }
 
+.g24 {
+    gap: 24px;
+}
+
+.g32 {
+    gap: 32px;
+}
+
 .pointer {
     cursor: pointer;
 }
 
+.stdw {
+    width: 1460px;
+    margin: 0 auto;
+}
 
 
 header {
@@ -117,6 +124,7 @@ header {
 
 .header-item {
     color: #3f3f3e;
+    white-space: nowrap;
 }
 
 .header-item__text {
@@ -136,6 +144,7 @@ header {
 
 .search-input input[type="text"] {
     box-sizing: border-box;
+    max-width: 250px;
     border: 1px solid #3f3f3e;
     height: 32px;
     border-radius: 16px;
@@ -163,6 +172,7 @@ header {
     border-radius: 100px;
     font-size: 14px;
     padding: 0 12px;
+    white-space: nowrap;
 }
 
 .basket-info__icon {
@@ -182,4 +192,219 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-52%, -27%);
+}
+
+
+.nav-main {
+    background-color: #ffe954;
+    width: 100%;
+    min-width: 1460px;
+}
+
+.nav-main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    overflow: hidden;
+}
+
+.nav-main__catalog {
+    text-transform: uppercase;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.nav-main__catalog li {
+    line-height: 24px;
+    padding: 0 24px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.15s;
+}
+
+.nav-main__catalog li:hover {
+    background: white;
+}
+
+.nav-main__links li {
+    text-transform: uppercase;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.nav-main__links li a {
+    color: #3f3f3e;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+}
+
+.nav-main__links li:hover a {
+    color: black;
+    border-color: inherit;
+}
+
+
+.promo {
+    margin-top: 64px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 890px auto;
+}
+
+.promo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promo-link {
+    color: #ff5a00;
+    font-size: 12px;
+}
+
+.r12c1 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.r1c2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.r2c2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+main {
+    min-width: 1460px;
+}
+
+.promo-1 {
+    position: relative;
+    color: white;
+}
+
+.promo-1__title {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    font-size: 82.09px;
+    line-height: 68px;
+    width: 380px;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.promo-1__link {
+    position: absolute;
+    top: 253px;
+    left: 458px;
+    text-decoration: none;
+    font-size: 18.87px;
+    font-weight: bold;
+    border: none;
+    border-radius: 100px;
+    padding: 14px 26px;
+    white-space: nowrap;
+
+    color: white;
+    background-color: #fd5e00;
+
+    cursor: pointer;
+}
+
+.promo-1__hexagon {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    background-image: url(images/sale1_hexagon.png);
+    width: 109px;
+    height: 100px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.promo-1__sales60 {
+    position: absolute;
+    bottom: 5px;
+    padding-left: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.promo-1__upto {
+    position: absolute;
+    bottom: 8px;
+    font-size: 11px;
+    left: 5px;
+}
+
+.promo-text19 {
+    font-size: 19px;
+}
+
+.promo-text33 {
+    font-size: 33px;
+}
+
+
+.promo-2 {
+    position: relative;
+}
+
+.promo-2__title {
+    position: absolute;
+    top: 22px;
+    left: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 30%;
+}
+
+.promo-2__logo {
+    position: absolute;
+    right: 15px;
+    bottom: 9px;
+}
+
+.promo-2__link {
+    position: absolute;
+    left: 23px;
+    bottom: 8px;
+}
+
+
+.promo-3 {
+    position: relative;
+    color: white;
+}
+
+.promo-3__title {
+    position: absolute;
+    top: 60px;
+    right: 18px;
+    font-size: 41px;
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.promo-3__subtitle {
+    position: absolute;
+    top: 115px;
+    right: 20px;
+    font-size: 14px;
+    width: 160px;
+    text-align: right;
+}
+
+.promo-3__link {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
 }

@@ -7,53 +7,91 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="root-container">
-        <header>
-            <div class="logo pointer">
-                <p>Light</p>
-                <div class="logo__circle"></div>
+    <header class="stdw">
+        <div class="logo pointer">
+            <p>Light</p>
+            <div class="logo__circle"></div>
+        </div>
+
+        <div class="header-items">
+            <div class="search-input">
+                <div class="search-input__icon"></div>
+                <input id="search" type="text">
             </div>
 
-            <div class="header-items">
-                <div class="search-input">
-                    <div class="search-input__icon"></div>
-                    <input id="search" type="text">
-                </div>
+            <div class="header-item row-cv g8 pointer">
+                <p class="ic-location"></p>
+                <p class="header-item__text">Москва</p>
+            </div>
+            <div class="header-item row-cv g8 pointer">
+                <p class="ic-call"></p>
+                <p class="header-item__text">+7 (495) 128-11-38</p>
+            </div>
+            <div class="header-item row-cv g8 pointer">
+                <p class="ic-clock"></p>
+                <p class="header-item__text">Ежедневно с 9:00 до 22:00</p>
+            </div>
 
-                <div class="header-item row-cv g8 pointer">
-                    <p class="ic-location"></p>
-                    <p class="header-item__text">Москва</p>
-                </div>
-                <div class="header-item row-cv g8 pointer">
-                    <p class="ic-call"></p>
-                    <p class="header-item__text">+7 (495) 128-11-38</p>
-                </div>
-                <div class="header-item row-cv g8 pointer">
-                    <p class="ic-clock"></p>
-                    <p class="header-item__text">Ежедневно с 9:00 до 22:00</p>
-                </div>
-
-                <div class="row-cv g8">
-                    <div class="basket-info row-cv g16 pointer">
-                        <p class="basket-info__total">26 546 ₽</p>
-                        <div class="basket-info__icon">
-                            <p class="basket-info__count">4</p>
-                        </div>
+            <div class="row-cv g8">
+                <div class="basket-info row-cv g16 pointer">
+                    <p class="basket-info__total">26 546 ₽</p>
+                    <div class="basket-info__icon">
+                        <p class="basket-info__count">4</p>
                     </div>
-                    <div class="ic-trends pointer"></div>
-                    <div class="ic-favs pointer"></div>
+                </div>
+                <div class="ic-trends pointer"></div>
+                <div class="ic-favs pointer"></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-main">
+        <div class="nav-main-content stdw">
+            <ul class="nav-main__catalog row-cv g24">
+                <li>Каталог товаров</li>
+                <li>Бренды +</li>
+                <li>Стили +</li>
+            </ul>
+
+            <ul class="nav-main__links row-cv g32">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Гарантия/возврат</a></li>
+                <li><a href="#">Доставки/оплата</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="promo stdw">
+            <div class="promo-1 r12c1">
+                <img src="images/sale1.png" alt="TODO" class="promo-img">
+                <p class="promo-1__title">РАСПРОДАЖА</p>
+                <a href="#" class="promo-1__link">ПЕРЕЙТИ К ТОВАРАМ</a>
+                <div class="promo-1__hexagon">
+                    <p class="promo-1__sales60"><span class="promo-text19">Скидки</span> <span class="promo-text33">60%</span></p>
+                    <p class="promo-1__upto">ДО</p>
                 </div>
             </div>
-        </header>
 
-        <nav class="nav-main">
-        </nav>
+            <div class="promo-2 r1c2">
+                <img src="images/vele_luce.png" alt="TODO" class="promo-img">
+                <img src="images/logo_vele_luce.png" alt="TODO" class="promo-2__logo">
+                <p class="promo-2__title">С нами будет светло</p>
+                <a href="#" class="promo-2__link promo-link">Подробнее</a>
+            </div>
 
-        <main>
-        </main>
+            <div class="promo-3 r2c2">
+                <img src="images/bulb_gift.png" alt="TODO" class="promo-img">
+                <p class="promo-3__title">Акция</p>
+                <p class="promo-3__subtitle">Лампочка для люстр в подарок</p>
+                <a href="#" class="promo-3__link promo-link">Подробнее</a>
+            </div>
+        </div>
+    </main>
 
-        <footer>
-        </footer>
-    </div>
+    <footer>
+    </footer>
 </body>
 </html>
