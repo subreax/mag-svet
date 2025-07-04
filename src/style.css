@@ -83,7 +83,8 @@ body {
 
 .stdw {
     width: 1460px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -198,7 +199,7 @@ header {
 .nav-main {
     background-color: #ffe954;
     width: 100%;
-    min-width: 1460px;
+    min-width: fit-content;
 }
 
 .nav-main-content {
@@ -246,8 +247,12 @@ header {
 }
 
 
+section {
+    margin: 64px 0;
+}
+
+
 .promo {
-    margin-top: 64px;
     display: grid;
     gap: 16px;
     grid-template-columns: 890px auto;
@@ -280,7 +285,7 @@ header {
 }
 
 main {
-    min-width: 1460px;
+    min-width: fit-content;
 }
 
 .promo-1 {
@@ -407,4 +412,192 @@ main {
     position: absolute;
     bottom: 8px;
     right: 12px;
+}
+
+
+h2 {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    gap: 16px;
+    margin-bottom: 56px;
+}
+
+h2::before, h2::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: black;
+    flex-grow: 1;
+}
+
+
+h3 {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+    gap: 64px;
+    margin-bottom: 56px;
+}
+
+h3::before, h3::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: black;
+    flex-grow: 1;
+}
+
+
+
+
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.category {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+}
+
+.category p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    font-size: 24px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.category p::before, 
+.category p::after {
+    content: "";
+    display: block;
+    min-width: 32px;
+    max-width: 32px;
+
+    height: 1px;
+    background-color: black;
+}
+
+
+
+.hits {
+    display: flex;
+    gap: 48px;
+    overflow: hidden;
+}
+
+.product {
+    width: calc((100% - (48px * 3)) / 4);
+    color: #292828;
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 32px;
+}
+
+.product__title {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    margin-bottom: 16px;
+}
+
+.product__price {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.product__rub {
+    font-size: 32px;
+}
+
+.product__old-price {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    opacity: 0.42;
+    text-decoration: line-through;
+}
+
+.product__old-price::before,
+.product__old-price::after {
+    content: "\a0";
+}
+
+.product button {
+    display: block;
+    margin: 10px auto;
+    font-family: Montserrat, sans-serif;
+    color: inherit;
+    background-color: #ffde00;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    border-radius: 100px;
+    padding: 15px 43px;
+    cursor: pointer;
+}
+
+.product__badges {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 8px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.product-badge {
+    line-height: 20px;
+    padding: 0 7px;
+}
+
+.product-badge--orange {
+    background-color: #eb6200;
+    color: white;
+    font-size: 13px;
+}
+
+.product-badge--grey {
+    background-color: #555555;
+    color: white;
+    font-size: 10px;
+}
+
+.product-badge--green {
+    font-size: 13px;
+    background-color: #44ae1a;
+    color: white;
+    text-transform: uppercase;
 }
