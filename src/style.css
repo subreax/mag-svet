@@ -87,6 +87,9 @@ body {
     margin-right: auto;
 }
 
+.fw500 {
+    font-weight: 500;
+}
 
 header {
     display: flex;
@@ -691,4 +694,68 @@ h3::before, h3::after {
     height: 100%;
     object-fit: cover;
     opacity: 0.5;
+}
+
+
+
+/* .about {
+    background: url("images/about-lamp.png"), #ffde06;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: calc(50% - 650px);
+    padding-top: 35px;
+    padding-bottom: 80px;
+} */
+
+.about {
+    background: #ffde06;
+    padding-top: 35px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.about__img {
+    position: absolute;
+    height: 80%;
+    left: calc(50% - 600px);
+    top: 50%;
+    object-fit: contain;
+    transform: translate(-50%, -55%);
+}
+
+.about__title {
+    text-transform: uppercase;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.about__title::after {
+    content: "";
+    display: block;
+    flex: 1;
+    height: 1px;
+    background-color: black;
+}
+
+.about p {
+    margin: 24px 0;
+}
+
+.about button {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    border: none;
+    background-color: black;
+    color: white;
+    line-height: 43px;
+    padding: 0 32px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.about__margin {
+    margin-left: calc(50% - 360px);
 }
