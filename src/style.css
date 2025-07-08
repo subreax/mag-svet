@@ -250,8 +250,12 @@ header {
 }
 
 
-section {
+main section {
     margin: 64px 0;
+}
+
+main section:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -698,15 +702,6 @@ h3::before, h3::after {
 
 
 
-/* .about {
-    background: url("images/about-lamp.png"), #ffde06;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: calc(50% - 650px);
-    padding-top: 35px;
-    padding-bottom: 80px;
-} */
-
 .about {
     background: #ffde06;
     padding-top: 35px;
@@ -749,7 +744,7 @@ h3::before, h3::after {
     border: none;
     background-color: black;
     color: white;
-    line-height: 43px;
+    line-height: 36px;
     padding: 0 32px;
     border-radius: 100px;
     cursor: pointer;
@@ -758,4 +753,71 @@ h3::before, h3::after {
 
 .about__margin {
     margin-left: calc(50% - 360px);
+}
+
+
+
+footer {
+    min-width: 1460px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 56px;
+    padding-bottom: 20px;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer .title {
+    color: #ffd800;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer .item {
+    position: relative;
+    margin: 12px 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+footer .item__icon {
+    position: absolute;
+    top: 1px;
+    left: -34px;
+}
+
+footer .item__largetext {
+    font-weight: normal;
+    line-height: normal;
+    font-size: 24px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 11px;
+    opacity: 0.32;
+}
+
+.line-36 {
+    line-height: 36px;
 }
