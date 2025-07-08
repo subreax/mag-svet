@@ -704,16 +704,18 @@ h3::before, h3::after {
 
 .about {
     background: #ffde06;
-    padding-top: 35px;
+    padding-top: 40px;
     padding-bottom: 80px;
     position: relative;
+    margin-top: 120px;
+    font-size: 21px;
 }
 
 .about__img {
     position: absolute;
     height: 80%;
-    left: calc(50% - 600px);
-    top: 50%;
+    left: calc(50% - 620px);
+    top: 53%;
     object-fit: contain;
     transform: translate(-50%, -55%);
 }
@@ -724,6 +726,7 @@ h3::before, h3::after {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-bottom: 56px;
 }
 
 .about__title::after {
@@ -741,18 +744,19 @@ h3::before, h3::after {
 .about button {
     font-family: Montserrat, sans-serif;
     font-weight: bold;
+    font-size: 18px;
     border: none;
     background-color: black;
     color: white;
-    line-height: 36px;
+    line-height: 44px;
     padding: 0 32px;
+    margin-top: 16px;
     border-radius: 100px;
     cursor: pointer;
-    font-size: 18px;
 }
 
 .about__margin {
-    margin-left: calc(50% - 360px);
+    margin-left: calc(50% - 340px);
 }
 
 
