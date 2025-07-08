@@ -87,6 +87,13 @@ body {
     margin-right: auto;
 }
 
+.stdw-ext {
+    width: 1460px;
+    padding: 0 72px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .fw500 {
     font-weight: 500;
 }
@@ -824,4 +831,39 @@ footer .item__largetext {
 
 .line-36 {
     line-height: 36px;
+}
+
+
+.pos-rel {
+    position: relative;
+}
+
+.arrow-left {
+    position: absolute;
+    background: url(icons/arrow-left.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    padding: 16px;
+    width: 29px;
+    height: 51px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.arrow-right {
+    position: absolute;
+    background: url(icons/arrow-right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: calc(100% - 61px); /* 100% - width - padding*2 */
+    padding: 16px;
+    transform: translate(0, -50%);
+    width: 29px;
+    height: 51px;
+    z-index: 10;
+    cursor: pointer;
 }
