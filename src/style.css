@@ -60,6 +60,22 @@ a:hover {
     background-repeat: no-repeat;
 }
 
+.mt8 {
+    margin-top: 8px;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.mt32 {
+    margin-top: 32px;
+}
+
+.row {
+    display: flex;
+}
+
 .row-cv {
     display: flex;
     align-items: center;
@@ -79,6 +95,10 @@ a:hover {
 
 .g32 {
     gap: 32px;
+}
+
+.flex1 {
+    flex: 1;
 }
 
 .pointer {
@@ -223,23 +243,87 @@ header {
     overflow: hidden;
 }
 
-.nav-main__catalog {
+.nml-item {
     text-transform: uppercase;
     font-size: 14px;
     list-style-type: none;
+    cursor: pointer;
+
+    padding: 13px 0;
 }
 
-.nav-main__catalog li {
+.nml-item__text {
     line-height: 24px;
     padding: 0 24px;
-    cursor: pointer;
     border-radius: 50px;
     transition: background-color 0.15s;
+
+    margin: 13px 0;
 }
 
-.nav-main__catalog li:hover {
+.nml-item:hover .nml-item__text {
     background: white;
 }
+
+
+.nml-item:hover .nml-item__dropdown {
+    display: block;
+}
+
+.nml-item__dropdown {
+    position: absolute;
+    display: none;
+    width: 1460px;
+    background-color: white;
+    z-index: 1;
+    text-transform: none;
+}
+
+
+
+.catalog-dd {
+    padding: 20px 100px;
+    cursor: auto;
+}
+
+.catalog-dd__types {
+    width: 300px;
+}
+
+.catalog-dd__list {
+    list-style-type: "– ";
+    margin-left: 11px;
+}
+
+.catalog-dd__list li {
+    margin: 4px 0;
+}
+
+.catalog-dd__title {
+    color: rgb(52, 59, 88);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.catalog-dd__title--centered {
+    color: rgb(52, 59, 88);
+    font-weight: bold;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+
+.catalog-dd__group {
+    border: 1px dashed #c7c7c7;
+    padding: 10px;
+}
+
+
+.catalog-dd__selectors {
+    flex: 1;
+}
+
+
 
 .nav-main__links li {
     text-transform: uppercase;
@@ -258,6 +342,8 @@ header {
     color: black;
     border-color: inherit;
 }
+
+
 
 
 main section {
