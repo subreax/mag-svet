@@ -15,6 +15,10 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .ic-location {
     display: inline-block;
     background-image: url(icons/location.png);
@@ -82,16 +86,15 @@ body {
 }
 
 .stdw {
-    width: 1460px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.stdw-ext {
-    width: 1460px;
+    width: 1604px;
     padding: 0 72px;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
+}
+
+.minw-fix {
+    min-width: 1604px;
 }
 
 .fw500 {
@@ -769,7 +772,7 @@ h3::before, h3::after {
 
 
 footer {
-    min-width: 1460px;
+    min-width: fit-content;
     background-color: black;
     color: white;
     font-size: 16px;
