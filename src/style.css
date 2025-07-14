@@ -129,11 +129,24 @@ button {
     font-weight: 500;
 }
 
+.swiper-cover {
+    position: relative;
+    padding: 0 64px;
+}
 
+.swiper-cover > .swiper {
+    position: static;
+}
 
-.swiper-button-prev,
-.swiper-button-next {
-    --swiper-navigation-color: gray;
+.swiper > .swiper-button-prev,
+.swiper > .swiper-button-next {
+    --swiper-navigation-color: #d1d1d1;
+    transition: color 0.3s;
+}
+
+.swiper > .swiper-button-prev:hover,
+.swiper > .swiper-button-next:hover {
+    --swiper-navigation-color: #a2a2a2;
 }
 
 
@@ -733,9 +746,17 @@ h3::before, h3::after {
 }
 
 
+.styles {
+    height: 200px;
+}
+
+.styles > .swiper {
+    height: 100%;
+}
+
 .style {
     position: relative;
-    height: 200px;
+    height: 100%;
     background-color: black;
 }
 
@@ -789,6 +810,10 @@ h3::before, h3::after {
     height: 200px;
 }
 
+.brands > .swiper {
+    height: 100%;
+}
+
 .brand {
     position: relative;
     height: 100%;
@@ -797,9 +822,10 @@ h3::before, h3::after {
 
 .brand__icon {
     position: absolute;
+    object-fit: contain;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(90%);
     z-index: 1;
 }
 

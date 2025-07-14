@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper4 = new Swiper('.swiper4', {
   direction: 'horizontal',
   loop: true,
   navigation: {
@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 48
 });
 
-/* const swiper_5 = new Swiper('.swiper-5', {
+const swiper5 = new Swiper('.swiper5', {
   direction: 'horizontal',
   loop: true,
   navigation: {
@@ -18,4 +18,4 @@ const swiper = new Swiper('.swiper', {
   },
   slidesPerView: 5,
   spaceBetween: 48
-}); */
+});
