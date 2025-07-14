@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интернет-магазин светильников Light</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header class="stdw">
@@ -246,146 +251,184 @@
 
         <h3>Хиты продаж</h3>
 
-        <section class="hits stdw pos-rel">
-            <div class="arrow-left"></div>
-            <div class="arrow-right"></div>
-            <div class="product">
-                <img src="images/products/item1.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
-                <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
-                <p class="product__price">19’677 <span class="product__rub">₽</span></p>
-                <p class="product__old-price">29’730 ₽</p>
-                <button>В корзину</button>
-            </div>
+        <section class="swiper stdw">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-            <div class="product">
-                <img src="images/products/item2.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
-                <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
-                <p class="product__price">9’677 <span class="product__rub">₽</span></p>
-                <p class="product__old-price">29’730 ₽</p>
-                <button>В корзину</button>
-                <div class="product__badges">
-                    <p class="product-badge product-badge--orange">-34%</p>
-                    <p class="product-badge product-badge--grey">экономия 580р</p>
+            <div class="swiper-wrapper">
+                <div class="product swiper-slide">
+                    <img src="images/products/item1.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
+                    <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
+                    <p class="product__price">19’677 <span class="product__rub">₽</span></p>
+                    <p class="product__old-price">29’730 ₽</p>
+                    <button>В корзину</button>
                 </div>
-            </div>
 
-            <div class="product">
-                <img src="images/products/item3.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
-                <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
-                <p class="product__price">9’677 <span class="product__rub">₽</span></p>
-                <p class="product__old-price">29’730 ₽</p>
-                <button>В корзину</button>
-            </div>
+                <div class="product swiper-slide">
+                    <img src="images/products/item2.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
+                    <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
+                    <p class="product__price">9’677 <span class="product__rub">₽</span></p>
+                    <p class="product__old-price">29’730 ₽</p>
+                    <button>В корзину</button>
+                    <div class="product__badges">
+                        <p class="product-badge product-badge--orange">-34%</p>
+                        <p class="product-badge product-badge--grey">экономия 580р</p>
+                    </div>
+                </div>
 
-            <div class="product">
-                <img src="images/products/item4.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
-                <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
-                <p class="product__price">119’677 <span class="product__rub">₽</span></p>
-                <p class="product__old-price">29’730 ₽</p>
-                <button>В корзину</button>
-                <div class="product__badges">
-                    <p class="product-badge product-badge--orange">-34%</p>
-                    <p class="product-badge product-badge--grey">экономия 580р</p>
+                <div class="product swiper-slide">
+                    <img src="images/products/item3.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
+                    <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
+                    <p class="product__price">9’677 <span class="product__rub">₽</span></p>
+                    <p class="product__old-price">29’730 ₽</p>
+                    <button>В корзину</button>
+                </div>
+
+                <div class="product swiper-slide">
+                    <img src="images/products/item4.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
+                    <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
+                    <p class="product__price">119’677 <span class="product__rub">₽</span></p>
+                    <p class="product__old-price">29’730 ₽</p>
+                    <button>В корзину</button>
+                    <div class="product__badges">
+                        <p class="product-badge product-badge--orange">-34%</p>
+                        <p class="product-badge product-badge--grey">экономия 580р</p>
+                    </div>
+                </div>
+
+                <div class="product swiper-slide">
+                    <img src="images/products/item4.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
+                    <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
+                    <p class="product__price">119’677 <span class="product__rub">₽</span></p>
+                    <p class="product__old-price">29’730 ₽</p>
+                    <button>В корзину</button>
+                    <div class="product__badges">
+                        <p class="product-badge product-badge--orange">-34%</p>
+                        <p class="product-badge product-badge--grey">экономия 580р</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <h3>Новинки</h3>
 
-        <section class="hits stdw pos-rel">
-            <div class="arrow-left"></div>
-            <div class="arrow-right"></div>
-            <div class="product">
-                <img src="images/products/item1.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
-                <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
-                <p class="product__price">19’677 <span class="product__rub">₽</span></p>
-                <p class="product__old-price">29’730 ₽</p>
-                <button>В корзину</button>
-                <div class="product__badges">
-                    <p class="product-badge product-badge--green">new</p>
-                </div>
-            </div>
+        <section class="swiper stdw">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-            <div class="product">
-                <img src="images/products/item2.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
-                <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
-                <p class="product__price">9’677 <span class="product__rub">₽</span></p>
-                <p class="product__old-price">29’730 ₽</p>
-                <button>В корзину</button>
-                <div class="product__badges">
-                    <p class="product-badge product-badge--green">new</p>
+            <div class="swiper-wrapper">
+                <div class="product swiper-slide">
+                    <img src="images/products/item1.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
+                    <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
+                    <p class="product__price">19’677 <span class="product__rub">₽</span></p>
+                    <p class="product__old-price">29’730 ₽</p>
+                    <button>В корзину</button>
+                    <div class="product__badges">
+                        <p class="product-badge product-badge--green">new</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="product">
-                <img src="images/products/item3.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
-                <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
-                <p class="product__price">9’677 <span class="product__rub">₽</span></p>
-                <p class="product__old-price">29’730 ₽</p>
-                <button>В корзину</button>
-                <div class="product__badges">
-                    <p class="product-badge product-badge--green">new</p>
+    
+                <div class="product swiper-slide">
+                    <img src="images/products/item2.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
+                    <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
+                    <p class="product__price">9’677 <span class="product__rub">₽</span></p>
+                    <p class="product__old-price">29’730 ₽</p>
+                    <button>В корзину</button>
+                    <div class="product__badges">
+                        <p class="product-badge product-badge--green">new</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="product">
-                <img src="images/products/item4.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
-                <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
-                <p class="product__price">119’677 <span class="product__rub">₽</span></p>
-                <p class="product__old-price">29’730 ₽</p>
-                <button>В корзину</button>
-                <div class="product__badges">
-                    <p class="product-badge product-badge--green">new</p>
+    
+                <div class="product swiper-slide">
+                    <img src="images/products/item3.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
+                    <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
+                    <p class="product__price">9’677 <span class="product__rub">₽</span></p>
+                    <p class="product__old-price">29’730 ₽</p>
+                    <button>В корзину</button>
+                    <div class="product__badges">
+                        <p class="product-badge product-badge--green">new</p>
+                    </div>
+                </div>
+    
+                <div class="product swiper-slide">
+                    <img src="images/products/item4.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
+                    <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
+                    <p class="product__price">119’677 <span class="product__rub">₽</span></p>
+                    <p class="product__old-price">29’730 ₽</p>
+                    <button>В корзину</button>
+                    <div class="product__badges">
+                        <p class="product-badge product-badge--green">new</p>
+                    </div>
+                </div>
+    
+                <div class="product swiper-slide">
+                    <img src="images/products/item4.png" alt="Подвесная люстра Mytony Grazia MOD046PL-08CH">
+                    <a href="#" class="product__title">Подвесная люстра Mytony Grazia MOD046PL-08CH</a>
+                    <p class="product__price">119’677 <span class="product__rub">₽</span></p>
+                    <p class="product__old-price">29’730 ₽</p>
+                    <button>В корзину</button>
+                    <div class="product__badges">
+                        <p class="product-badge product-badge--green">new</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <h3 id="link-styles">Стили</h3>
-        <section class="styles stdw pos-rel">
-            <div class="arrow-left"></div>
-            <div class="arrow-right"></div>
+        <section class="stdw swiper">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-            <div class="style">
-                <img src="images/styles/scandinavian.png" alt="Скандинавский">
-                <p>Скандинавский</p>
-            </div>
-            <div class="style">
-                <img src="images/styles/loft.png" alt="Лофт">
-                <p>Лофт</p>
-            </div>
-            <div class="style">
-                <img src="images/styles/provance.png" alt="Прованс">
-                <p>Прованс</p>
-            </div>
-            <div class="style">
-                <img src="images/styles/modern.png" alt="Современный">
-                <p>Современный</p>
+            <div class="swiper-wrapper">
+                <div class="style swiper-slide">
+                    <img src="images/styles/scandinavian.png" alt="Скандинавский">
+                    <p>Скандинавский</p>
+                </div>
+                <div class="style swiper-slide">
+                    <img src="images/styles/loft.png" alt="Лофт">
+                    <p>Лофт</p>
+                </div>
+                <div class="style swiper-slide">
+                    <img src="images/styles/provance.png" alt="Прованс">
+                    <p>Прованс</p>
+                </div>
+                <div class="style swiper-slide">
+                    <img src="images/styles/modern.png" alt="Современный">
+                    <p>Современный</p>
+                </div>
+                <div class="style swiper-slide">
+                    <img src="images/styles/modern.png" alt="Современный">
+                    <p>Современный</p>
+                </div>
             </div>
         </section>
 
         <h3 id="link-brands">Бренды</h3>
-        <section class="brands stdw pos-rel">
-            <div class="arrow-left"></div>
-            <div class="arrow-right"></div>
-            <div class="brand">
-                <img class="brand__icon" src="images/brands/ic-arte.png" alt="Arte icon">
-                <img class="brand__bg" src="images/brands/arte.png" alt="Arte">
-            </div>
-            <div class="brand">
-                <img class="brand__icon" src="images/brands/ic-citilux.png" alt="Citilux icon">
-                <img class="brand__bg" src="images/brands/citilux.png" alt="Citilux">
-            </div>
-            <div class="brand">
-                <img class="brand__icon" src="images/brands/ic-eglo.png" alt="Eglo icon">
-                <img class="brand__bg" src="images/brands/eglo.png" alt="Eglo">
-            </div>
-            <div class="brand">
-                <img class="brand__icon" src="images/brands/ic-eurosvet.png" alt="Eurosvet icon">
-                <img class="brand__bg" src="images/brands/eurosvet.png" alt="Eurosvet">
-            </div>
-            <div class="brand">
-                <img class="brand__icon" src="images/brands/ic-favourite.png" alt="Favourite icon">
-                <img class="brand__bg" src="images/brands/favourite.png" alt="Favourite">
+        <section class="brands stdw swiper">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-wrapper">
+                <div class="brand swiper-slide">
+                    <img class="brand__icon" src="images/brands/ic-arte.png" alt="Arte icon">
+                    <img class="brand__bg" src="images/brands/arte.png" alt="Arte">
+                </div>
+                <div class="brand swiper-slide">
+                    <img class="brand__icon" src="images/brands/ic-citilux.png" alt="Citilux icon">
+                    <img class="brand__bg" src="images/brands/citilux.png" alt="Citilux">
+                </div>
+                <div class="brand swiper-slide">
+                    <img class="brand__icon" src="images/brands/ic-eglo.png" alt="Eglo icon">
+                    <img class="brand__bg" src="images/brands/eglo.png" alt="Eglo">
+                </div>
+                <div class="brand swiper-slide">
+                    <img class="brand__icon" src="images/brands/ic-eurosvet.png" alt="Eurosvet icon">
+                    <img class="brand__bg" src="images/brands/eurosvet.png" alt="Eurosvet">
+                </div>
+                <div class="brand swiper-slide">
+                    <img class="brand__icon" src="images/brands/ic-favourite.png" alt="Favourite icon">
+                    <img class="brand__bg" src="images/brands/favourite.png" alt="Favourite">
+                </div>
             </div>
         </section>
 

@@ -102,6 +102,10 @@ button {
     gap: 32px;
 }
 
+.g48 {
+    gap: 48px;
+}
+
 .flex1 {
     flex: 1;
 }
@@ -111,20 +115,28 @@ button {
 }
 
 .stdw {
-    width: 1604px;
-    padding: 0 72px;
+    width: 1460px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
 }
 
 .minw-fix {
-    min-width: 1604px;
+    min-width: 1460px;
 }
 
 .fw500 {
     font-weight: 500;
 }
+
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    --swiper-navigation-color: gray;
+}
+
+
 
 header {
     display: flex;
@@ -631,14 +643,7 @@ h3::before, h3::after {
 
 
 
-.hits {
-    display: flex;
-    gap: 48px;
-    overflow: hidden;
-}
-
 .product {
-    width: calc((100% - (48px * 3)) / 4);
     color: #292828;
     position: relative;
 }
@@ -678,7 +683,7 @@ h3::before, h3::after {
 
 .product__old-price::before,
 .product__old-price::after {
-    content: "\a0";
+    content: "\a0"; /* whitespace */
 }
 
 .product button {
@@ -728,15 +733,7 @@ h3::before, h3::after {
 }
 
 
-
-.styles {
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-}
-
 .style {
-    flex: 1;
     position: relative;
     height: 200px;
     background-color: black;
@@ -789,15 +786,10 @@ h3::before, h3::after {
 
 
 .brands {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 200px;
-    gap: 32px;
 }
 
 .brand {
-    flex: 1;
     position: relative;
     height: 100%;
     background-color: #484848;
@@ -946,39 +938,4 @@ footer .item__largetext {
 
 .line-36 {
     line-height: 36px;
-}
-
-
-.pos-rel {
-    position: relative;
-}
-
-.arrow-left {
-    position: absolute;
-    background: url(icons/arrow-left.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
-    padding: 16px;
-    width: 29px;
-    height: 51px;
-    z-index: 10;
-    cursor: pointer;
-}
-
-.arrow-right {
-    position: absolute;
-    background: url(icons/arrow-right.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    top: 50%;
-    left: calc(100% - 61px); /* 100% - width - padding*2 */
-    padding: 16px;
-    transform: translate(0, -50%);
-    width: 29px;
-    height: 51px;
-    z-index: 10;
-    cursor: pointer;
 }
