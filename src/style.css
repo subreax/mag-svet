@@ -15,8 +15,13 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
-a:hover {
-    text-decoration: none;
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
 }
 
 .ic-location {
@@ -133,6 +138,13 @@ header {
     font-family: Annabelle, sans-serif;
     font-size: 55px;
     font-style: italic;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo__text {
+    padding-right: 20px;
 }
 
 .logo__circle {
@@ -159,6 +171,8 @@ header {
 .header-item {
     color: #3f3f3e;
     white-space: nowrap;
+    font-size: 18px;
+    text-decoration: none;
 }
 
 .header-item__text {
@@ -207,6 +221,7 @@ header {
     font-size: 14px;
     padding: 0 12px;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .basket-info__icon {
@@ -244,17 +259,20 @@ header {
 }
 
 .nml-item {
-    text-transform: uppercase;
+    line-height: 24px;
+    color: inherit;
     font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
     list-style-type: none;
     cursor: pointer;
-
-    padding: 13px 0;
 }
 
 .nml-item__text {
-    line-height: 24px;
+    display: inline-block;
+    line-height: inherit;
     padding: 0 24px;
+    text-transform: inherit;
     border-radius: 50px;
     transition: background-color 0.15s;
 
@@ -355,21 +373,19 @@ main section:last-child {
 }
 
 
+
+
 .promo {
     display: grid;
     gap: 16px;
-    grid-template-columns: 890px auto;
-}
-
-.promo-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .promo-link {
     color: #ff5a00;
     font-size: 12px;
+    text-decoration: underline;
 }
 
 .r12c1 {
@@ -392,37 +408,39 @@ main {
 }
 
 .promo-1 {
+    display: flex;
     position: relative;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 32px;
     color: white;
+    background: url(images/sale1.jpg);
+    background-size: cover;
+    padding-left: 50%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-decoration: none;
 }
 
 .promo-1__title {
-    position: absolute;
-    top: 22%;
-    left: 50%;
-    font-size: 82.09px;
+    font-size: 82px;
     line-height: 68px;
-    width: 380px;
+    width: 390px;
     font-weight: bold;
     word-break: break-all;
+    text-transform: uppercase;
 }
 
 .promo-1__link {
-    position: absolute;
-    top: 253px;
-    left: 458px;
-    text-decoration: none;
-    font-size: 18.87px;
+    font-size: 19px;
     font-weight: bold;
-    border: none;
     border-radius: 100px;
     padding: 14px 26px;
     white-space: nowrap;
 
     color: white;
     background-color: #fd5e00;
-
-    cursor: pointer;
 }
 
 .promo-1__hexagon {
@@ -462,12 +480,19 @@ main {
 
 .promo-2 {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-left: 24px;
+    padding-bottom: 10px;
+    background: url(images/vele_luce.png);
+    background-size: cover;
+    color: black;
+    text-decoration: none;
 }
 
 .promo-2__title {
-    position: absolute;
-    top: 22px;
-    left: 24px;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 30px;
@@ -480,41 +505,39 @@ main {
     bottom: 9px;
 }
 
-.promo-2__link {
-    position: absolute;
-    left: 23px;
-    bottom: 8px;
-}
 
 
 .promo-3 {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 4px;
     color: white;
+    background: url(images/bulb_gift.png);
+    background-size: cover;
+    text-decoration: none;
+    padding-right: 18px;
+    text-align: right;
 }
 
 .promo-3__title {
-    position: absolute;
-    top: 60px;
-    right: 18px;
     font-size: 41px;
     font-weight: bold;
-    text-align: right;
     text-transform: uppercase;
 }
 
 .promo-3__subtitle {
-    position: absolute;
-    top: 115px;
-    right: 20px;
     font-size: 14px;
-    width: 160px;
-    text-align: right;
+    width: max(25%, 120px);
 }
 
 .promo-3__link {
     position: absolute;
     bottom: 8px;
     right: 12px;
+    text-decoration: underline;
 }
 
 
@@ -571,6 +594,8 @@ h3::before, h3::after {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    color: black;
+    text-decoration: none;
 }
 
 .category img {
@@ -660,14 +685,11 @@ h3::before, h3::after {
     display: block;
     margin: 10px auto;
     font-family: Montserrat, sans-serif;
-    color: inherit;
     background-color: #ffde00;
     font-weight: 500;
     font-size: 14px;
-    border: none;
     border-radius: 100px;
     padding: 15px 43px;
-    cursor: pointer;
 }
 
 .product__badges {
@@ -837,14 +859,14 @@ h3::before, h3::after {
     margin: 24px 0;
 }
 
-.about button {
-    font-family: Montserrat, sans-serif;
+.about__link {
+    display: inline-block;
     font-weight: bold;
     font-size: 18px;
-    border: none;
     background-color: black;
     color: white;
     line-height: 44px;
+    text-decoration: none;
     padding: 0 32px;
     margin-top: 16px;
     border-radius: 100px;
@@ -873,8 +895,12 @@ footer {
 
 .footer-sections {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 24px;
+    gap: 32px;
+}
+
+.footer-sections section {
+    flex: 1;
 }
 
 footer a {

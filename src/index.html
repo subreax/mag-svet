@@ -8,39 +8,39 @@
 </head>
 <body>
     <header class="stdw">
-        <div class="logo pointer">
-            <p>Light</p>
+        <a href="#" class="logo">
+            <p class="logo__text">Light</p>
             <div class="logo__circle"></div>
-        </div>
+        </a>
 
         <div class="header-items">
-            <div class="search-input">
-                <div class="search-input__icon"></div>
-                <input id="search" type="text">
-            </div>
+            <form class="search-input">
+                <button class="search-input__icon" type="submit"></button>
+                <input id="btn-search" type="text" name="search">
+            </form>
 
-            <div class="header-item row-cv g8 pointer">
-                <p class="ic-location"></p>
-                <p class="header-item__text">Москва</p>
-            </div>
-            <div class="header-item row-cv g8 pointer">
-                <p class="ic-call"></p>
-                <p class="header-item__text">+7 (495) 128-11-38</p>
-            </div>
-            <div class="header-item row-cv g8 pointer">
-                <p class="ic-clock"></p>
-                <p class="header-item__text">Ежедневно с 9:00 до 22:00</p>
-            </div>
+            <button class="header-item row-cv g8 pointer">
+                <span class="ic-location"></span>
+                <span class="header-item__text">Москва</span>
+            </button>
+            <a href="#" class="header-item row-cv g8 pointer">
+                <span class="ic-call"></span>
+                <span class="header-item__text">+7 (495) 128-11-38</span>
+            </a>
+            <a href="#" class="header-item row-cv g8 pointer">
+                <span class="ic-clock"></span>
+                <span class="header-item__text">Ежедневно с 9:00 до 22:00</span>
+            </a>
 
             <div class="row-cv g8">
-                <div class="basket-info row-cv g16 pointer">
+                <a href="#" class="basket-info row-cv g16 pointer">
                     <p class="basket-info__total">26 546 ₽</p>
                     <div class="basket-info__icon">
                         <p class="basket-info__count">4</p>
                     </div>
-                </div>
-                <div class="ic-trends pointer"></div>
-                <div class="ic-favs pointer"></div>
+                </a>
+                <a href="#" class="ic-trends pointer"></a>
+                <a href="#" class="ic-favs pointer"></a>
             </div>
         </div>
     </header>
@@ -50,8 +50,8 @@
 
             <div class="nav-main__left row-cv g24">
                 <div class="nml-item">
-                    <p class="nml-item__text">Каталог товаров</p>
-                    <div class="nml-item__dropdown">
+                    <button id="btn-catalog" class="nml-item__text">Каталог товаров</button>
+                    <div id="catalog-dropdown" class="nml-item__dropdown">
                         <div class="row g16 catalog-dd">
                             <div class="catalog-dd__types mt16">
                                 <p class="catalog-dd__title">По типу</p>
@@ -128,23 +128,21 @@
                                     <div class="row mt8">
                                         <div class="flex1">
                                             <div>
-                                                <div>
-                                                    <p>Влагозащищенные</p>
-                                                    <div class="row g32">
-                                                        <ul class="catalog-dd__list">
-                                                            <li><a href="#">да</a></li>
-                                                        </ul>
-                                                        <ul class="catalog-dd__list">
-                                                            <li><a href="#">нет</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="mt16">
-                                                    <p>Продажа по</p>
+                                                <p>Влагозащищенные</p>
+                                                <div class="row g32">
                                                     <ul class="catalog-dd__list">
-                                                        <li><a href="#">штукам</a></li>
+                                                        <li><a href="#">да</a></li>
+                                                    </ul>
+                                                    <ul class="catalog-dd__list">
+                                                        <li><a href="#">нет</a></li>
                                                     </ul>
                                                 </div>
+                                            </div>
+                                            <div class="mt16">
+                                                <p>Продажа по</p>
+                                                <ul class="catalog-dd__list">
+                                                    <li><a href="#">штукам</a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                         <div class="flex1">
@@ -167,12 +165,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="nml-item">
-                    <p class="nml-item__text">Бренды</p>
-                </div>
-                <div class="nml-item">
-                    <p class="nml-item__text">Стили</p>
-                </div>
+                <a href="#link-brands" class="nml-item">
+                    <span class="nml-item__text">Бренды</span>
+                </a>
+                <a href="#link-styles" class="nml-item">
+                    <span class="nml-item__text">Стили</span>
+                </a>
             </div>
 
             <ul class="nav-main__links row-cv g32">
@@ -183,72 +181,67 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
         </div>
-
-        
     </nav>
 
     <main>
         <section class="promo stdw">
-            <div class="promo-1 r12c1">
-                <img src="images/sale1.png" alt="Распродажа" class="promo-img">
-                <p class="promo-1__title">РАСПРОДАЖА</p>
-                <a href="#" class="promo-1__link">ПЕРЕЙТИ К ТОВАРАМ</a>
+            <a href="#" class="promo-1 r12c1">
+                <p class="promo-1__title">Распродажа</p>
+                <p class="promo-1__link">Перейти к товарам</p>
                 <div class="promo-1__hexagon">
                     <p class="promo-1__sales60"><span class="promo-text19">Скидки</span> <span class="promo-text33">60%</span></p>
                     <p class="promo-1__upto">ДО</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="promo-2 r1c2">
-                <img src="images/vele_luce.png" alt="С нами будет светло. Скидка 20%" class="promo-img">
+            <a href="#" class="promo-2 r1c2">
                 <img src="images/logo_vele_luce.png" alt="Vele luce логотип" class="promo-2__logo">
                 <p class="promo-2__title">С нами будет светло</p>
-                <a href="#" class="promo-2__link promo-link">Подробнее</a>
-            </div>
+                <p class="promo-link">Подробнее</p>
+            </a>
 
-            <div class="promo-3 r2c2">
-                <img src="images/bulb_gift.png" alt="Акция лампочка для люстр в подарок" class="promo-img">
+            <a href="#" class="promo-3 r2c2">
                 <p class="promo-3__title">Акция</p>
                 <p class="promo-3__subtitle">Лампочка для люстр в подарок</p>
-                <a href="#" class="promo-3__link promo-link">Подробнее</a>
-            </div>
+                <p class="promo-3__link promo-link">Подробнее</p>
+            </a>
         </section>
 
         <h2>Интернет-магазин светильников Light</h2>
 
         <section class="categories stdw">
-            <div class="category">
+            <a href="#" class="category">
                 <img src="images/categories/chandeliers.png" alt="Люстры">
                 <p>Люстры</p>
-            </div>
-            <div class="category">
+            </a>
+            <a href="#" class="category">
                 <img src="images/categories/bra.png" alt="Бра">
                 <p>Бра</p>
-            </div>
-            <div class="category">
+            </a>
+            <a href="#" class="category">
                 <img src="images/categories/torsher.png" alt="Торшеры">
                 <p>Торшеры</p>
-            </div>
-            <div class="category">
+            </a>
+            <a href="#" class="category">
                 <img src="images/categories/potolochnye.png" alt="Потолочные светильники">
                 <p>Потолочные светильники</p>
-            </div>
-            <div class="category">
+            </a>
+            <a href="#" class="category">
                 <img src="images/categories/table-lamp.png" alt="Настольные лампы">
                 <p>Настольные лампы</p>
-            </div>
-            <div class="category">
+            </a>
+            <a href="#" class="category">
                 <img src="images/categories/embedded.png" alt="Встраиваемые светильники">
                 <p>Встраиваемые светильники</p>
-            </div>
-            <div class="category">
+            </a>
+            <a href="#" class="category">
                 <img src="images/categories/outdoor.png" alt="Уличные светильники">
                 <p>Уличные светильники</p>
-            </div>
-            <div class="category">
+            </a>
+            <a href="#" class="category">
                 <img src="images/categories/lightbulbs.png" alt="Лампочки">
                 <p>Лампочки</p>
-            </div>
+            </a>
         </section>
 
         <h3>Хиты продаж</h3>
@@ -347,7 +340,7 @@
             </div>
         </section>
 
-        <h3>Стили</h3>
+        <h3 id="link-styles">Стили</h3>
         <section class="styles stdw pos-rel">
             <div class="arrow-left"></div>
             <div class="arrow-right"></div>
@@ -370,7 +363,7 @@
             </div>
         </section>
 
-        <h3>Бренды</h3>
+        <h3 id="link-brands">Бренды</h3>
         <section class="brands stdw pos-rel">
             <div class="arrow-left"></div>
             <div class="arrow-right"></div>
@@ -404,7 +397,7 @@
                     <p><span class="fw500">В нашем магазине</span> представлено свыше 100 000 светильников из России, Китая и таких европейских стран, как Австрия, Бельгия, Великобритания, Германия, Испания, Италия, Чехия. У нас можно купить освещение для спальни, гостиной, кухни, коридора, ванной и детской комнат.</p>
                     <p><span class="fw500">Мы регулярно обновляем наш ассортимент</span> и делаем так, чтобы светильники у нас могли купить все, вне зависимости от покупательской способности. Поэтому у нас есть как продукция эконом-класса по демократичным ценам, так товар премиум-класса по более высокой стоимости.</p>
                     <p><span class="fw500">Доставку заказов мы выполняем в Тулу и в другие города Тульской области</span> – Новомосковск, Донской, Алексин, Щекино, Ефремов, Богородицк, Плавск и прочие населенные пункты. Отправку производим любой транспортной или курьерской компанией на Ваш выбор (Деловые линии, ПЭК, СДЭК, Boxberry). Обращаем ваше внимание, что ограничений на минимальную стоимость заказа для доставки в регионы у нас нет.</p>
-                    <button>Подробнее о нашей компании</button>
+                    <a href="#" class="about__link">Подробнее о нашей компании</a>
                 </div>
             </div>
         </section>
