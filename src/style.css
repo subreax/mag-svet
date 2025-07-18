@@ -148,7 +148,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 130px;
+    min-height: 130px;
     flex-wrap: wrap;
 }
 
@@ -428,7 +428,7 @@ main section:last-child {
 }
 
 .promo-1__title {
-    font-size: clamp(3.5rem, 5vw, 4.5em);
+    font-size: clamp(3.5rem, 7vw, 5.1rem);
     line-height: 0.8;
     font-weight: bold;
     word-break: break-all;
